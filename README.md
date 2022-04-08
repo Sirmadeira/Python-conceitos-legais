@@ -1,3 +1,3 @@
-# Python-conceitos-legais
-* Coisas neat que vem no meu youtube
-* Entao para ter um jeito facil de arquivar montei esse repo.
+# Python-cool-concepts
+* Just a smash together of cool thing i see on youtube and i feel like rewatching
+* Basically my python archives for that
