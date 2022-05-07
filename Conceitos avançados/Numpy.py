@@ -303,3 +303,55 @@ print(tabela_moldada)
 nova_tabela = tabela.clip(10,50)
 
 print(nova_tabela)
+
+# Como dar loops em array?
+
+tabela = np.array([[2,27,5,6,83,32,86],
+				  [3,21,11,6,73,44,74],
+				  [1,20,9,9,68,42,69],
+				  [0,19,10,9,58,36,67],
+				  [4,20,6,12,68,50,66]])
+
+# Vamos pegar somente as colunas com index impar
+# Vamo multiplicar todos os individuos por 2 
+
+for i in range(0,len(tabela)):
+	if i % 2:
+		for j in range(0,len(tabela[i])):
+			tabela[i][j]=tabela[i][j]*2
+
+print(tabela)
+
+
+# Vamos pegar somente as colunas com index par
+# Vamo multiplicar os individuos que tem um index divisivel por 2 e salvar ele
+# No antecessor por 2 casas
+# E vamos salvar essa coluna 
+
+tabela = np.array([[2,27,5,6,83,32,86],
+				  [3,21,11,6,73,44,74],
+				  [1,20,9,9,68,42,69],
+				  [0,19,10,9,58,36,67],
+				  [4,20,6,12,68,50,66]])
+
+
+for i in range(0,len(tabela)):
+	if i % 2 == 0:
+		for j in range(0,len(tabela[i])):
+			if j % 2 == 0:
+				tabela[i][j-2]=tabela[i][j]
+print(tabela)
+
+# Vamo mover os elementos dois indexe para atras
+#Mas numa logica axis=0 sobe/desce a linha
+
+
+tabela = np.array([[2,27,5,6,83,32,86],
+				  [3,21,11,6,73,44,74],
+				  [1,20,9,9,68,42,69],
+				  [0,19,10,9,58,36,67],
+				  [4,20,6,12,68,50,66]])
+for i in range(0,len(tabela)):
+	 for j in range(0,len(tabela[i])):
+	 	tabela[i-2][j]=tabela[i][j]
+print(tabela)
