@@ -36,9 +36,7 @@ print(f'Exemplo de variavel de classe sendo redefinida {carro_1.rodas}')
 Carros.rodas = 2
 carro_3 = Carros(modelo='Chevrolet',ano=2022,cor = 'amarelo')
 print(f'Exemplo de variavel de classe sendo redefinida para todos os objetos sucedentes{carro_3.rodas}')
-#Exemplo
 
-carro_1.dirigir()
+print(carro_1.ano)
 carro_1.pare()
 #Essas linha aqui executam a acao/ executam o metodo da minha classe
-

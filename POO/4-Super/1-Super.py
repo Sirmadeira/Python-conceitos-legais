@@ -36,4 +36,3 @@ Cubo_1 = Cubo(3,3,3)
 
 print(Cubo_1.volume())
 print(Quadrado_1.area())
-#Exemplo, de como a gente se reaproveito do metodo __init__ da classe Retangulo
