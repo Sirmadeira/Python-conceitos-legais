@@ -18,6 +18,7 @@
 # Um so e feito, qnd o outro "pausa"
 
 from ast import arg
+from ntpath import join
 import threading
 # Modulo necessario para verificar o fio que esta rodando o codigo
 import time
@@ -67,10 +68,11 @@ z.start()
 
 x.join()
 y.join()
+z.join()
 #Junta os threads criados ao main thread, e bom qnd a gente qr q uma tarefa seja executada, logo em seguida de um evento
 # Ou quando q a gente paralelizar ela devido a um evento de outra
 
 print(threading.active_count())
 print(threading.enumerate())
-print(time.perf_counter)
+print(time.perf_counter())
 # Verifica qnt tempo,  a main thread demora para executar o codigo de criacao de funcoes e prints

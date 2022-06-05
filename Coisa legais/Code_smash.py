@@ -1,10 +1,24 @@
-import numpy as np
+# import pandas as pd
 
-tabela = np.array([[2,27,5,6,83,32,86],
-				  [3,21,11,6,73,44,74],
-				  [1,20,9,9,68,42,69],
-				  [0,19,10,9,58,36,67],
-				  [4,20,6,12,68,50,66]])
+# df = pd.DataFrame({'fruit':['apple','banana','orange'],'america_inv':[0,2,0],'asia_inv':[1,0,0],'aurope_inv':[2,1,3]})
+
+# out = (df.melt('fruit', var_name='continent', ignore_index=False)
+#          .query('value > 0')[['fruit', 'continent']].sort_index())
+# #print(df.set_index('fruit'))
+# print(out)
+
+from os import remove
+from subprocess import list2cmdline
 
 
-print(tabela.sum(axis=0))
+def remove_nulos(x):
+    if x:    
+        return 'batata'
+    else:
+        return 'pickles'
+
+
+
+lip = [0 ,0,'batata']
+
+print(list(map(remove_nulos,lip)))
