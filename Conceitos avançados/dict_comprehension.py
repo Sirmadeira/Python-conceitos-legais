@@ -1,7 +1,7 @@
 # Compreensao de dicionario = cria um dicionario se utilziando de uma expressao
 #                             pode subsituir certos for loops e lambda functions
 # 
-# dict = {chave: expression for (chave,valor) in iteravel}
+# dict = {chave expression :valor expression for (chave,valor) in iteravel}
  
 cidades_em_fahrenheit = {'New York': 32, 'Boston': 75, 'Rio de Janeiro': 100, 'Sampa': 50} 
 
